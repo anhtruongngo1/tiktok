@@ -1,0 +1,22 @@
+.wrapper {
+    // width: 356px;
+    padding: 20px 0 100px 8px;
+    margin-left: -18px;
+    max-width: 356px;
+    position: fixed;
+    flex: 1;
+    width: 33%;
+    overflow-y: auto;
+    height: 100vh ;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    &:hover::-webkit-scrollbar{
+        display: block;
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.layout{
+    max-width: 232px;
+}

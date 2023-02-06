@@ -1,0 +1,27 @@
+.actions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.button{
+    border: none;
+    background: none;
+    outline: none;
+}
+.icon{
+    display: flex;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1618230f;
+}
+.strong{
+    color: #161823bf;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
