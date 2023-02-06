@@ -20,7 +20,10 @@ function DetailUser() {
 
     useEffect(() => {
         DetailanUser()
-    }, [id]);
+    }, []);
+    useEffect(()=>{
+
+    },[id])
     const DetailanUser = async () => {
         const res = userService
             .getInfoUser({
