@@ -13,7 +13,7 @@ function LayoutInfor() {
         <div className={cx('container')}>
                 <Sidebar classe="layout" />
                 <div className={cx('content')}>
-                    <DetailUser />
+                    {/* <DetailUser /> */}
                     
                     
                 </div>
