@@ -19,12 +19,13 @@ function DetailUser() {
     const [infoUser, setInfoUser] = useState([]);
 
     useEffect(() => {
-        DetailanUser()
+        DetailanUser(id)
     }, []);
     useEffect(()=>{
 
     },[id])
-    const DetailanUser = async () => {
+    console.log('check id' , id);
+    const DetailanUser = async (id) => {
         const res = userService
             .getInfoUser({
                 type: '@' + id,
@@ -36,7 +37,7 @@ function DetailUser() {
         const accessToken = localStorage.getItem('user');
         const res = await userService.userFollow({ id, accessToken });
         console.log('check res1', res);
-        DetailanUser()
+        DetailanUser(id)
     };
     console.log('check user', infoUser);
     return (
