@@ -20,15 +20,13 @@ function DetailUser() {
 
     useEffect(() => {
         DetailanUser(id)
-    }, []);
-    useEffect(()=>{
+    }, [id]);
 
-    },[id])
     console.log('check id' , id);
     const DetailanUser = async (id) => {
         const res = userService
             .getInfoUser({
-                type: '@' + id,
+                type:  id,
             })
             .then((data) => setInfoUser(data))
             .catch((error) => console.log(error));

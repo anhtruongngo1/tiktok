@@ -5,7 +5,7 @@ const routes = {
     upload :'/upload' ,
     search :'/search' ,
     live :'/live' ,
-    information :'/information/@:id' ,
+    information :'/information/:id' ,
     video :'/video/detail/@id'
     
 

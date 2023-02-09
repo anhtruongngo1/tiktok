@@ -11,7 +11,6 @@ function App() {
     const modalDetailVideo = useSelector((state) => state.user.modalDetailVideo)
     
     useEffect(()=>{
-        console.log('checkkk' , modalLogin);
     },[modalLogin])
     return (
         <Router>
